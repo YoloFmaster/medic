@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/analyze"
+        android:orderInCategory="1"
+        android:icon="@drawable/anylyze"
+        android:title="@string/analyses"
+        />
+
+    <item
+        android:id="@+id/results"
+        android:orderInCategory="2"
+        android:icon="@drawable/result"
+        android:title="@string/result"
+        />
+
+    <item
+        android:id="@+id/support"
+        android:orderInCategory="3"
+        android:icon="@drawable/support"
+        android:title="@string/support"
+        android:contentDescription="@string/support"
+        />
+
+    <item
+        android:id="@+id/profile"
+        android:orderInCategory="4"
+        android:icon="@drawable/user"
+        android:title="@string/user"
+        />
+    
+</menu>

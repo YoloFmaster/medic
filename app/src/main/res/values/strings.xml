@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">medic</string>
+    <string name="nameLogo">Смартлаб</string>
+
+    <!-- onboarding screen -->
+    <string name="skip">Пропустить</string>
+    <string name="finalize">Завершить</string>
+    <string name="analyses">Анализы</string>
+    <string name="analysesText">Экспресс сбор и получение проб</string>
+    <string name="notification">Уведомление</string>
+    <string name="notificationText">Вы быстро узнаете о результатах</string>
+    <string name="monitoring">Мониторинг</string>
+    <string name="monitoringText">Наши врачи всегда наблюдают\n за вашими показателями здоровья</string>
+
+    <!-- antefacation screen -->
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="login">Войдите, чтобы пользоваться функциями приложения</string>
+    <string name="loginWithEmail">Вход по E-mail</string>
+    <string name="hintEmail">example@mail.ru</string>
+    <string name="next">Далее</string>
+    <string name="loginWithHelp">Или войдите с помощью </string>
+    <string name="loginWithYandex">Войти с Яндекс</string>
+
+    <!-- confirmation  email screen-->
+    <string name="emailCode">Введите код из E-mail</string>
+    <string name="repeatedCode">Отправить код повторно можно\n будет через секунд</string>
+
+    <!-- create password -->
+    <string name="createPassword">Создайте пароль</string>
+    <string name="createPasswordDescription">Для защиты ваших персональных данных</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+
+    <!-- create user medicine card -->
+    <string name="createMedicineCard">Создание карты\nпациента</string>
+    <string name="createMedicineCardDescription1">Без карты пациента вы не сможете заказать анализы.</string>
+    <string name="createMedicineCardDescription2">В картах пациентов будут храниться результаты анализов вас и ваших близких.</string>
+    <string name="name">Имя</string>
+    <string name="middleName">Отчество</string>
+    <string name="lastName">Фамилия</string>
+    <string name="dateOfBirth">Дата рождения</string>
+    <string name="gender">Пол</string>
+    <string name="create">Создать</string>
+    <string-array name="Gender">
+        <item>Пол</item>
+        <item>Мужской</item>
+        <item>Женский</item>
+    </string-array>
+
+
+    <!-- Bottom navigation titles -->
+    <string name="result">Результаты</string>
+    <string name="support">Поддержка</string>
+    <string name="user">Профиль</string>
+
+    <!-- Analyze fragment -->
+    <!-- RecycleView titles -->
+    <string name="header1">Чек-ап для\nмужчин</string>
+    <string name="research1">9 исследований</string>
+    <string name="price1">8000 ₽</string>
+
+    <string name="header2">Подготовка к\nвакцинации</string>
+    <string name="research2">Комплексное обследование\nперед вакцинацией</string>
+    <string name="price2">4000 ₽</string>
+
+    <string name="news">Акции и новости</string>
+    <string name="catalogAnalyze">Каталог анализов</string>
+
+
+
+</resources>

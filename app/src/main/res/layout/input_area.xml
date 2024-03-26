@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="335dp"
+    android:layout_height="48dp"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textColor="@color/textEditText"
+    android:background="@drawable/edit_text"
+    android:text="@string/gender"
+    android:gravity="center_vertical"
+    android:paddingStart="12dip"
+    android:paddingEnd="7dip"
+    android:checkMark="@drawable/baseline_keyboard_arrow_down_24"
+    android:ellipsize="marquee"
+    />

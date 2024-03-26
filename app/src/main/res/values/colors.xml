@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gradient1">#5797df</color>
+    <color name="gradient2">#2857f2</color>
+    <color name="gradient3">#5ca5e1</color>
+    <color name="rectangleFill">#D8FBE2</color>
+    <color name="textBlue">#57A9FF</color>
+    <color name="textGreen">#00B712</color>
+    <color name="textGray">#939396</color>
+    <color name="textDescription">#7E7E9A</color>
+    <color name="isNotFilling">#C9D4FB</color>
+    <color name="Filling">#1A6FEE</color>
+    <color name="backgroundEditText">#F5F5F9</color>
+    <color name="strokeHollowEditText">#EBEBEB</color>
+    <color name="strokeFillingEditText">#B8C1CC</color>
+    <color name="textEditText">#50000000</color>
+    <color name="dotSelected">#57A9FF</color>
+</resources>
