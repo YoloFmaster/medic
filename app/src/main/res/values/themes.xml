@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Medic" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="whiteButton">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:background">@drawable/white_button</item>
+    </style>
+
+    <style name="Theme.Medic" parent="Base.Theme.Medic" />
+    
+    <style name="editTextEmailCode">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+</resources>
