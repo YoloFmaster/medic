@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/layout_AntefactionActivity"
     android:background="@color/white"
     tools:context=".AntefactionActivity">
 
@@ -106,7 +107,8 @@
         android:text="@string/loginWithYandex"
         android:textColor="@color/black"
         android:textSize="17sp"
-        android:theme="@style/whiteButton"
+        style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

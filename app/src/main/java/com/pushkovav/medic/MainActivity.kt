@@ -1,13 +1,13 @@
 package com.pushkovav.medic
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.pushkovav.medic.fragment.AnalyzeFragment
-import com.pushkovav.medic.fragment.ProfileFragment
-import com.pushkovav.medic.fragment.ResultFragment
-import com.pushkovav.medic.fragment.SupportFragment
+import com.pushkovav.medic.fragment.home.AnalyzeFragment
+import com.pushkovav.medic.fragment.home.ProfileFragment
+import com.pushkovav.medic.fragment.home.ResultFragment
+import com.pushkovav.medic.fragment.home.SupportFragment
 
 class MainActivity : AppCompatActivity() {
 

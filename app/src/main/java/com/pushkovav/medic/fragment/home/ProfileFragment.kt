@@ -1,4 +1,4 @@
-package com.pushkovav.medic.fragment
+package com.pushkovav.medic.fragment.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

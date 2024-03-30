@@ -74,6 +74,23 @@
     <string name="news">Акции и новости</string>
     <string name="catalogAnalyze">Каталог анализов</string>
 
+    <!-- RecycleView Analyze titles -->
+    <string name="add">Добавить</string>
+    <string name="analyze1">ПЦР-тест на определение РНК коронавируса стандартный</string>
+    <string name="countDay1">2 дня</string>
+    <string name="priceAnalyze1">1800р</string>
+
+    <string name="analyze2">Клинический анализ крови с лейкоцитарной формулировкой</string>
+    <string name="countDay2">1 дня</string>
+    <string name="priceAnalyze2">690р</string>
+
+    <string name="analyze3">Биохимический анализ крови, базовый</string>
+    <string name="countDay3">1 дня</string>
+    <string name="priceAnalyze3">2440р</string>
+
+    <string name="analyze4">СОЭ(венозная кровь)</string>
+    <string name="countDay4">1 дня</string>
+    <string name="priceAnalyze4">240р</string>
 
 
 </resources>
