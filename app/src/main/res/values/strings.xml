@@ -92,5 +92,13 @@
     <string name="countDay4">1 дня</string>
     <string name="priceAnalyze4">240р</string>
 
+    <string name="noneResult">Такого анализа нет</string>
+
+    <!-- Profile screen -->
+    <string name="userCard">Карта пациент</string>
+    <string name="profileWarning">Без карты пациента вы не сможете заказать анализы.</string>
+    <string name="cardDescription">В картах пациентов будут храниться результаты анализов вас и ваших близких.</string>
+    <string name="redact">Редактировать</string>
+    <string name="save">Сохранить</string>
 
 </resources>

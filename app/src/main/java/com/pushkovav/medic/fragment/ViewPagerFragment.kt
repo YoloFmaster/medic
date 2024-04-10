@@ -3,11 +3,11 @@ package com.pushkovav.medic.fragment
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.pushkovav.medic.AntefactionActivity
 import com.pushkovav.medic.R
@@ -18,8 +18,8 @@ import com.pushkovav.medic.fragment.onboarding.ThirdScreen
 import com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
 
 
-@Suppress("NAME_SHADOWING")
 class ViewPagerFragment : Fragment() {
+
 
     @SuppressLint("SetTextI18n")
     override fun onCreateView(
@@ -40,9 +40,9 @@ class ViewPagerFragment : Fragment() {
             requireActivity().supportFragmentManager,
             lifecycle
         )
-        
-        val springDotsIndicator = view.findViewById<SpringDotsIndicator>(R.id.spring_dots_indicator)
+
         val viewPager = view.findViewById<ViewPager2>(R.id.viewPager)
+        val springDotsIndicator = view.findViewById<SpringDotsIndicator>(R.id.spring_dots_indicator)
 
         viewPager.adapter = adapter
         springDotsIndicator.attachTo(viewPager)

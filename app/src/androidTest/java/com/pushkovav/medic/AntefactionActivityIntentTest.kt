@@ -11,7 +11,7 @@ import androidx.test.ext.junit.rules.ActivityScenarioRule
 import org.junit.Rule
 import org.junit.Test
 
-class AntefactionActivityIntentTest {
+class AntefactionActivityTest {
 
     @JvmField
     @Rule
@@ -19,7 +19,7 @@ class AntefactionActivityIntentTest {
 
 
     @Test
-    fun espressoTest(){
+    fun nextScreen(){
         onView(withId(R.id.layout_AntefactionActivity))
             .check(matches(isDisplayed()))
         onView(withId(R.id.editText))
@@ -27,6 +27,28 @@ class AntefactionActivityIntentTest {
         onView(withId(R.id.buttonNext))
             .perform(click())
         onView(withId(R.id.layout_ConfirmitionEmailActivity))
+            .check(matches(isDisplayed()))
+    }
+
+    @Test
+    fun checkVisibility(){
+        onView(withId(R.id.layout_AntefactionActivity))
+            .check(matches(isDisplayed()))
+        onView(withId(R.id.hello))
+            .check(matches(isDisplayed()))
+        onView(withId(R.id.welcome))
+            .check(matches(isDisplayed()))
+        onView(withId(R.id.textView))
+            .check(matches(isDisplayed()))
+        onView(withId(R.id.label))
+            .check(matches(isDisplayed()))
+        onView(withId(R.id.editText))
+            .check(matches(isDisplayed()))
+        onView(withId(R.id.buttonNext))
+            .check(matches(isDisplayed()))
+        onView(withId(R.id.enterWhithHelp))
+            .check(matches(isDisplayed()))
+        onView(withId(R.id.button2))
             .check(matches(isDisplayed()))
     }
 

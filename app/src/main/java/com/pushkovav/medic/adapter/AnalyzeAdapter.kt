@@ -12,10 +12,9 @@ class AnalyzeAdapter(
     analyze: ArrayList<Analyze>
 ): RecyclerView.Adapter<AnalyzeAdapter.AnalyzeHolder>() {
 
-    private val analyzeList = analyze
+    private var analyzeList = analyze
 
-    class AnalyzeHolder(item: View): RecyclerView.ViewHolder(item){
-        private val item = item
+    class AnalyzeHolder(private val item: View): RecyclerView.ViewHolder(item){
         fun bind(analyze: Analyze){
             val header = item.findViewById<TextView>(R.id.header)
             val countDay = item.findViewById<TextView>(R.id.countDay)
@@ -26,6 +25,10 @@ class AnalyzeAdapter(
             priceAnalyze.setText(analyze.priceAnalyze)
 
         }
+    }
+    fun setFilteredAnalyzeList(filteredAnalyzeList: ArrayList<Analyze>){
+        this.analyzeList = filteredAnalyzeList
+        notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AnalyzeHolder {

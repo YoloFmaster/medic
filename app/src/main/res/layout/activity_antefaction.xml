@@ -50,6 +50,7 @@
         tools:ignore="TextContrastCheck,TextSizeCheck" />
 
     <TextView
+        android:id="@+id/label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/loginWithEmail"
@@ -90,6 +91,7 @@
         tools:ignore="TextContrastCheck" />
 
     <TextView
+        android:id="@+id/enterWhithHelp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/loginWithHelp"

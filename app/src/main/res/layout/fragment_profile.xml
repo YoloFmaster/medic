@@ -3,12 +3,174 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.home.ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Profile" />
+        android:id="@+id/headerFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/userCard"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="9dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="118dp"
+        android:layout_height="93dp"
+        app:cardCornerRadius="100dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/textGray">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/photo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="335dp"
+        android:layout_height="20dp"
+        android:text="@string/profileWarning"
+        android:textColor="@color/textGray"
+        android:textSize="14sp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="335dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/cardDescription"
+        android:textColor="@color/textGray"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/textName"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edit_text"
+        android:hint="@string/name"
+        android:focusableInTouchMode="false"
+        android:textColorHint="@color/textGray"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:paddingStart="14dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="RtlSymmetry,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/textMiddleName"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text"
+        android:hint="@string/middleName"
+        android:focusableInTouchMode="false"
+        android:textColorHint="@color/textGray"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:paddingStart="14dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textName"
+        app:layout_constraintStart_toStartOf="@+id/textName"
+        app:layout_constraintTop_toBottomOf="@+id/textName"
+        tools:ignore="RtlSymmetry,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/textLastName"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text"
+        android:hint="@string/lastName"
+        android:focusableInTouchMode="false"
+        android:textColorHint="@color/textGray"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:paddingStart="14dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textMiddleName"
+        app:layout_constraintStart_toStartOf="@+id/textMiddleName"
+        app:layout_constraintTop_toBottomOf="@+id/textMiddleName"
+        tools:ignore="RtlSymmetry,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/textDateOfBirth"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text"
+        android:hint="@string/dateOfBirth"
+        android:focusableInTouchMode="false"
+        android:textColorHint="@color/textGray"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        android:paddingStart="14dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textLastName"
+        app:layout_constraintStart_toStartOf="@+id/textLastName"
+        app:layout_constraintTop_toBottomOf="@+id/textLastName"
+        tools:ignore="RtlSymmetry,TextContrastCheck" />
+
+    <Spinner
+        android:id="@+id/spinnerGender"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text"
+        android:prompt="@string/gender"
+        android:focusableInTouchMode="false"
+        android:textColor="@color/textGray"
+        app:layout_constraintEnd_toEndOf="@+id/textDateOfBirth"
+        app:layout_constraintStart_toStartOf="@+id/textDateOfBirth"
+        app:layout_constraintTop_toBottomOf="@+id/textDateOfBirth" />
+
+    <Button
+        android:id="@+id/redactCard"
+        android:layout_width="335dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/Filling"
+        android:text="@string/redact"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerGender"
+        app:layout_constraintStart_toStartOf="@+id/spinnerGender"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerGender"
+        tools:ignore="TextContrastCheck" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
