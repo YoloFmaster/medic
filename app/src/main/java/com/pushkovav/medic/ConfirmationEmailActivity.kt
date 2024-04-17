@@ -1,13 +1,15 @@
 package com.pushkovav.medic
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.KeyEvent
 import android.widget.EditText
 import android.widget.ImageView
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 
 class ConfirmationEmailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,9 +17,13 @@ class ConfirmationEmailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_confirmation_email)
     }
 
+    private var timer: CountDownTimer? = null
+    
 
     override fun onResume() {
         super.onResume()
+
+
         val pastActivity = findViewById<ImageView>(R.id.backActivity)
 
         pastActivity.setOnClickListener{
@@ -173,5 +179,20 @@ class ConfirmationEmailActivity : AppCompatActivity() {
         val i = Intent(this, CreatePasswordActivity::class.java)
         startActivity(i)
         finish()
+    }
+
+    private suspend fun startCountDownTimer(timeMillis: Long){
+        val repeatedCode = findViewById<TextView>(R.id.repeatedCode)
+        timer?.cancel()
+        timer = object : CountDownTimer(timeMillis, 1000){
+            override fun onTick(millisUntilFinished: Long) {
+                repeatedCode.text = "Отправить код повторно можно\n будет через $millisUntilFinished секунд"
+            }
+
+            override fun onFinish() {
+                repeatedCode.text = "Нажмите для отправки нового кода"
+            }
+        }
+
     }
 }

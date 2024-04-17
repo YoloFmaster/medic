@@ -7,6 +7,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.pushkovav.medic.fragment.home.AnalyzeFragment
 import com.pushkovav.medic.fragment.home.ProfileFragment
 import com.pushkovav.medic.fragment.home.ResultFragment
+import com.pushkovav.medic.fragment.home.ShoppingCartFragment
 import com.pushkovav.medic.fragment.home.SupportFragment
 
 class MainActivity : AppCompatActivity() {
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
 
             when(it.itemId){
                 R.id.analyze -> replaceFragment(AnalyzeFragment())
+                R.id.shoppingCart -> replaceFragment(ShoppingCartFragment())
                 R.id.results -> replaceFragment(ResultFragment())
                 R.id.support -> replaceFragment(SupportFragment())
                 R.id.profile -> replaceFragment(ProfileFragment())
