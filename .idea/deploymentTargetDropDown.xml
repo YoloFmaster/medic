@@ -11,13 +11,13 @@
       <entry key="checkVisibility()">
         <State />
       </entry>
-      <entry key="createPassword()">
+      <entry key="inputTrueCode()">
         <State />
       </entry>
       <entry key="nextScreen()">
         <State />
       </entry>
-      <entry key="skipCreatingPassword()">
+      <entry key="nextScreen() (1)">
         <State />
       </entry>
     </value>
